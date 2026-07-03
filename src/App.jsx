@@ -20,21 +20,21 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/plan"
+            path="plan"
             element={<Plan plans={plans} setPlans={setPlans} />}
           />
           <Route
-            path="/plan/:day"
+            path="plan/:day"
             element={<PlanDetail plans={plans} setPlans={setPlans} />}
           />
           <Route
-            path="/plan/new"
+            path="plan/new"
             element={
               <PlanForm plans={plans} setPlans={setPlans} mode="create" />
             }
           />
           <Route
-            path="/plan/:id/edit"
+            path="plan/:id/edit"
             element={<PlanForm plans={plans} setPlans={setPlans} mode="edit" />}
           />
         </Routes>
